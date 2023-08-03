@@ -1,0 +1,69 @@
+* ,*::after , *::before{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.listItems {
+    position: absolute;
+    top: 101%;
+    right: 0;
+    left: 0;
+    display: none;
+
+}
+.active{
+    display: inline-block;
+}
+.listItems ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+.listItems ul li{
+   border: 0.3px solid gray; 
+list-style: none;
+padding: 1em 0.5em;
+font-size: 1.3rem;
+cursor: pointer;
+}
+.listItems ul li:hover{
+    background-color: aquamarine;
+}
+.box{
+    background-color: aliceblue;
+    min-height: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.close{
+    position: absolute;
+    font-size: 1.3rem;
+    font-style: bold;
+    right: 5%;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.item{
+    font-size: 1rem;
+    outline: none;
+    padding: 0.3em 0.5em;
+    text-align: center;
+    justify-content: flex-start;
+    border: none;
+    
+}
+.selected{
+    background-color: beige;
+}
+.item > span{
+    cursor: pointer;
+    margin-left: 0.4rem;
+}
